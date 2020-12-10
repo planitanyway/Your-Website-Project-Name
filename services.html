@@ -5,66 +5,97 @@
 <title>Services</title>
 </head>
 <style>
-		body {
-		font-family: "Segoe UI";
-		text-align: center;
-		background-color: #708e85;
-		font-color: #ffffff;
-	}
-	header {
-		padding: 20px;
-		text align: center;
-		font-size: 35px;
-		}
-.button {
-  background-color: #ffffff; /* White */
-  border: none;
-  color: #000000;
-  padding: 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 14px 40px;
-  cursor: pointer;
+	
+	* {
+  box-sizing: border-box;
 }
 
-.services {border-radius: 12px;}
-.portfolio {border-radius: 12px;}
-.aboutus {border-radius: 12px;}
-.contact {border-radius: 12px;}
+body {
+  margin: 0;
+  font-family: "Segoe UI";
+}
+
+.header {
+  background-color: #708e85;
+  font-size: 32px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #919191;
+  color: black;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 60px;
+}
 	
-	article {
-		float: left;
-		text-align: justify;
-		font-size: 20px;
-		padding: 20px;
-		width: 50%;
-		background-color: #f1f1f1;
-		height: 300px;
-	}
+ul.a {
+  list-style-type: circle;
+  float: right;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width:600px) {
+  .column {
+    width: 50%;
+  }
+}
 </style>
+
 <body>
-		<header>
-		<a href="index.html">
+
+<div class="header">
+	<a href="index.html">
 			<img src="images/Asset 1.png" alt="Home" <span style="float: left;"></a>
-		<h1>Plan It Anyway</h1>
-		</header>
+	<h1>Plan It Anyway</h1>
+</div>
+
+<div class="topnav">
+  <a href="services.html">Services</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="aboutus.html">About Us</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<div class="row">
+  <div class="column">
+ <img src="images/event-planning-2.jpg" alt="Event Planning" style="width:512px; height:342px">
+  </div>
+  
+  <div class="column">
+    <ul class="a">
+  <li>Personal Planning</li>
+  <li>Budgeting</li>
+  <li>Events</li>
+  <li>Fitness Training</li>
+</ul>
+  </div>
+  
+</div>   
 	
-			<button class="services.html">Services</button>
-			<button class="portfolio.html">Portfolio</button>
-			<button class="aboutus.html">About Us</button>
-			<button class="contact.html">Contact</button>
-	<br>
-	
-	<section>
-		<article>
-    		<img src="images/event-planning-2.jpg" alt="Event Planning" style="width:512px; height:342px">
-  		</article>
-	</section>
-	
-	<aside>
-		
-	</aside>
 </body>
 </html>

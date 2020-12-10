@@ -6,60 +6,86 @@
 </head>
 <style>
 	
-		body {
-		font-family: "Segoe UI";
-		text-align: center;
-		background-color: #708e85;
-		font-color: #ffffff;
-	}
-	header {
-		padding: 20px;
-		text align: center;
-		font-size: 35px;
-		}
-	.menubutton {
-  background-color: #ffffff; /* White */
-  border: none;
-  color: #000000;
-  padding: 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 14px 40px;
-  cursor: pointer;
+	* {
+  box-sizing: border-box;
 }
 
-.services {border-radius: 12px;}
-.portfolio {border-radius: 12px;}
-.aboutus {border-radius: 12px;}
-.contact {border-radius: 12px;}
-	
-  img {
+body {
+  margin: 0;
+  font-family: "Segoe UI";
+}
+
+.header {
+  background-color: #708e85;
+  font-size: 32px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
   float: left;
-	{
-@media screen and (max-width:600px)
-}	
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #919191;
+  color: black;
+}
+	.column {
+  float: left;
+  width: 50%;
+  padding: 60px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width:600px) {
+  .column {
+    width: 50%;
+  }
+}
 </style>
 <body>
-		<header>
-		<a href="index.html">
+
+<div class="header">
+	<a href="index.html">
 			<img src="images/Asset 1.png" alt="Home" <span style="float: left;"></a>
-		<h1>Plan It Anyway</h1>
-		</header>
-	
-			<button class="services.html">Services</button>
-			<button class="portfolio.html">Portfolio</button>
-			<button class="aboutus.html">About Us</button>
-			<button class="contact.html">Contact</button>
-	
-	<br>
-	
-	<article>
-<p><img src="images/profilepic.jpg" alt="profilepic" style="width:640px; height:427px;margin-left:15px;">
-    I have always loved planning and organizing but more importantly, I enjoy helping people. I do this by creating simple strategies to bring an event together, developing a fitness plan to help people get back on track or providing accountability for their hard-earned life goals to be met.</p>	
+	<h1>Plan It Anyway</h1>
+</div>
+
+<div class="topnav">
+  <a href="services.html">Services</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="aboutus.html">About Us</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+	<div class="row">
+  <div class="column">
+<img src="images/profilepic.jpg" alt="profilepic" style="width:640px; height:427px;margin-left:15px;">
+  </div>
+  
+  <div class="column">
+    <p>I have always loved planning and organizing but more importantly, I enjoy helping people. I do this by creating simple strategies to bring an event together, developing a fitness plan to help people get back on track or providing accountability for their hard-earned life goals to be met.</p>	
 	<p>I started Plan It Anyway as a way to connect with people, understand their struggles, and create a simple solution by sorting out what's important to the client and eliminating unnecessary distractions.</p>
     <p>I have this saying when things seem impossible, "When in doubt, plan it out! Not sure how to slay the day, Plan It Anyway!"</p>
-  		</article>	
+  </div>
+  
+</div>  
+	
 </body>
 </html>

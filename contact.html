@@ -5,60 +5,80 @@
 <title>Contact</title>
 </head>
 <style>
-		body {
-		font-family: "Segoe UI";
-		text-align: center;
-		background-color: #708e85;
-		font-color: #ffffff;
-	}
-	header {
-		padding: 20px;
-		text align: center;
-		font-size: 35px;
-		}
-	.menubutton {
-  background-color: #ffffff; /* White */
-  border: none;
-  color: #000000;
-  padding: 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 14px 40px;
-  cursor: pointer;
+* {
+  box-sizing: border-box;
 }
 
-.services {border-radius: 12px;}
-.portfolio {border-radius: 12px;}
-.aboutus {border-radius: 12px;}
-.contact {border-radius: 12px;}
-	
-	img {
+body {
+  margin: 0;
+  font-family: "Segoe UI";
+}
+
+.header {
+  background-color: #708e85;
+  font-size: 32px;
+  padding: 20px;
+  text-align: center;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+.topnav a {
   float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
-		{
-@media screen and (max-width:600px)
+
+.topnav a:hover {
+  background-color: #919191;
+  color: black;
 }
+		
+.column {
+  float: left;
+  width: 50%;
+  padding: 15px;
+  margin: 75px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width:600px) {
+  .column {
+    width: 50%;
+  }
+
 </style>
 	
 <body>
-		<header>
-		<a href="index.html">
+	
+<div class="header">
+	<a href="index.html">
 			<img src="images/Asset 1.png" alt="Home" <span style="float: left;"></a>
-		<h1>Plan It Anyway</h1>
-		</header>
-	
-			<button class="services.html">Services</button>
-			<button class="portfolio.html">Portfolio</button>
-			<button class="aboutus.html">About Us</button>
-			<button class="contact.html">Contact</button>
-	
-	<br>
-	
-	 	<img src="images/calendarplanning.jpg" alt="calendar" style="width:640px; height:427px; margin-left:15px;">
-	
+	<h1>Plan It Anyway</h1>
+</div>
+
+<div class="topnav">
+  <a href="services.html">Services</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="aboutus.html">About Us</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+		<div class="row"></div>
+  <div class="column">
+<img src="images/calendarplanning.jpg" alt="calendar" style="width:640px; height:427px; margin-left:15px;">
+  </div>
+	 <div class="column"></div>
 	<a href="mailto:planitanyway@gmail.com">EMAIL PLAN IT ANYWAY</a>
-	
+			
 </body>
 </html>
